@@ -52,12 +52,12 @@ namespace Test_Friedhelm
                             sb.Append(unicodeString[new Range(0, i)].Insert(13, "\t"));
                             sb.Append(Environment.NewLine);
                         }
-                        else if (unicodeString.StartsWith("E-Mail-Adresse"))
-                        {
-                            sb.Append(inset);
-                            sb.Append(unicodeString.Remove(0, 33));
-                            sb.Append(Environment.NewLine);
-                        }
+                        //else if (unicodeString.StartsWith("E-Mail-Adresse"))
+                        //{
+                        //    sb.Append(inset);
+                        //    sb.Append(unicodeString.Remove(0, 33));                   //Email Adress commented out, not needed
+                        //    sb.Append(Environment.NewLine);
+                        //}
                         else if (unicodeString.Contains("KFZ-Zeichen"))
                         {
                             sb.Append(inset);
